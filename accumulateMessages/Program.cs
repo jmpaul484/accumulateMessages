@@ -39,7 +39,14 @@ public static class Program
     public static string UserMessages(string newMessage, bool clear)
     {
         //Write your code here.
+        if messages == null)
+        {
+            messages = "";
+        }
+        else
+        { 
         messages += newMessage + "\n";
+        }
         if (clear)
         {
             messages = "";
