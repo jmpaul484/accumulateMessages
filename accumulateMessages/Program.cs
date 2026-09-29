@@ -31,25 +31,21 @@ public static class Program
         Console.ReadKey();  
     }
         //TODO:
-        // [y] - If clear is true, erase all saved messages.
-        // [ ] - Do not save empty messages.
+        // [x] - If clear is true, erase all saved messages.
+        // [x] - Do not save empty messages.
         // [x] - add a new line after each new message.
         // [x] - Always return currently saved messages.
-        // [ ] - Make sure all auto tests pass.
+        // [x] - Make sure all auto tests pass.
     public static string UserMessages(string newMessage, bool clear)
     {
         //Write your code here.
-        if messages == null)
-        {
-            messages = "";
-        }
-        else
-        { 
-        messages += newMessage + "\n";
-        }
         if (clear)
         {
             messages = "";
+        }
+        else if (newMessage != "")
+        {
+            messages += newMessage + Environment.NewLine;
         }
 
         return messages;
